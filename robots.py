@@ -3,7 +3,7 @@ from joblib import load
 
 st.title("Classification of Robots from their conversation")
 
-model = load('robots.joblib')
+model = load('Robots.joblib')
 
 numbers = []
 
@@ -19,4 +19,4 @@ if(clicked == True):
     pred = model.predict([numbers])
     print(pred[0])
 
-    st.write(f"Robot {pred[0]} have said these numbers")
+    st.header(f"Robot {pred[0]} have said these numbers")
