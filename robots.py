@@ -3,7 +3,7 @@ from joblib import load
 
 st.title("Classification of Robots from their conversation")
 
-model = load('Robots.joblib')
+model = load('robots.joblib')
 
 numbers = []
 
